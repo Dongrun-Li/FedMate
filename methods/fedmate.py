@@ -9,7 +9,7 @@ from torch import nn
 import torch.nn.functional as F
 from models import Discriminator
 
-class LocalUpdate_FedCode_0325(object):
+class LocalUpdate_FedMate(object):
     def __init__(self, idx, args, train_set, test_set, model, h_l):
         self.idx = idx
         self.args = args

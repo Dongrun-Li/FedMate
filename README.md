@@ -22,10 +22,10 @@ This repository implements FedMate, a novel federated learning framework that ad
 pip install torch torchvision numpy scikit-learn cvxpy
 
 # Run FedMate on CIFAR-10
-python main.py --dataset cifar10 --train_rule FedMate3 --num_users 10 --epochs 100
+python main.py --dataset cifar10 --train_rule FedMate --num_users 10 --epochs 100
 
 # Run with different heterogeneity settings
-python main.py --dataset cifar10 --train_rule FedMate3 --noniid_s 20 --local_size 600
+python main.py --dataset cifar10 --train_rule FedMate --noniid_s 20 --local_size 600
 ```
 
 ## Key Arguments

@@ -13,7 +13,7 @@ def one_round_training(rule):
         'FedAvg': train_round_fedavg,
         'FedPer': train_round_fedper,
         'Local': train_round_standalone,
-        'FedCode3': train_round_fedcode,
+        'FedMate': train_round_fedmate,
     }
     
     if rule not in training_methods:
@@ -203,8 +203,8 @@ def update_local_clients(args, local_clients, global_weight_new, global_protos, 
             local_client.update_local_classifier(new_weight=global_weight_new)
 
 
-def train_round_fedcode(args, global_model, local_clients, rnd, **kwargs):
-    """FedCode training round with prototype aggregation"""
+def train_round_fedmate(args, global_model, local_clients, rnd, **kwargs):
+    """Fedmate training round with prototype aggregation"""
     print(f'\n---- Global Communication Round : {rnd+1} ----')
     
     if rnd > args.epochs:
