@@ -32,7 +32,7 @@ python main.py --dataset cifar10 --train_rule FedMate --noniid_s 20 --local_size
 
 - `--train_rule`: Algorithm choice (`FedAvg`, `FedPer`, `Local`, `FedMate3`)
 - `--dataset`: Dataset (`cifar10`, `cifar100`, `mnist`, `fmnist`, `emnist`)
-- `--noniid_s`: Non-IID level (0-100, higher = more heterogeneous)
+- `--noniid_s`: Non-IID level (0-100, higher = less heterogeneous)
 - `--num_users`: Number of federated clients
 - `--afa`: Enable classifier aggregation
 - `--mum`: Enable multi-level prototype fusion
